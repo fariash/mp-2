@@ -4,10 +4,10 @@ import styled from 'styled-components';
 import { User } from './interfaces/User';
 
 const Container = styled.div`
-  width: 80vw;
+  width: 80%;
   margin: auto;
   border: 5px solid lightblue;
-  padding: 20px;
+  padding: 5%;
 `;
 
 export default function App() {
