@@ -1,36 +1,7 @@
-import styled from 'styled-components';
 import { User } from '../interfaces/User';
+import { UserListDiv, UserCard, UserImage, UserName, UserEmail } from './UserStyle';
 
-const UserListDiv = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  background-color: lightblue;
-`;
 
-const UserCard = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 5%;
-  margin: 2%;
-  border: 2px solid lightcoral;
-  background-color: white;
-  text-align: center;
-`;
-
-const UserImage = styled.img`
-  border-radius: 50%;
-`;
-
-const UserName = styled.h2`
-  font-size: 1.2;
-`;
-
-const UserEmail = styled.p`
-  font-size: .5;
-  color: gray;
-`;
 
 export default function RandomUserList({ users }: { users: User[] }) {
   return (
